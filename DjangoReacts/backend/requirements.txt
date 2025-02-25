@@ -1,2 +1,4 @@
 gunicorn==21.2.0
 Django==4.2.5
+djangorestframework
+django-cors-headers
