@@ -5,7 +5,7 @@ function App() {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
-        axios.get("/api/hello/")  // No need to specify full URL
+        axios.get("https://django-reacts-api.vercel.app/api/hello/") 
         .then(response => setMessage(response.data.message))
         .catch(error => console.error("Error fetching data:", error));
       }, []);
